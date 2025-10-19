@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <!-- CSS Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,6 +50,72 @@
     </header>
 
     <!-- 2/ قسم (Hero Section) مع خيارات الخدمات الرئيسية -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          
+          <img
+            src="https://img.freepik.com/premium-photo/healthcare-medical-doctor-with-stethoscope-patients-come-hospital_34200-808.jpg"
+            alt="slide img"
+            class="parallax-bg"
+            data-swiper-parallax="-23%"
+          />
+          <div class="title" data-swiper-parallax="-300">Slide 1</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
+            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+            libero. Aenean feugiat non eros quis feugiat.
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">Slide 2</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
+            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+            libero. Aenean feugiat non eros quis feugiat.
+          </div>
+          <img
+            src="https://vilmate.com/wp-content/uploads/2018/08/Medical_Website_Development-2.jpg"
+            alt="slide img"
+            class="parallax-bg"
+            data-swiper-parallax="-23%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">Slide 3</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
+            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+            libero. Aenean feugiat non eros quis feugiat.
+          </div>
+          <img
+            src="https://img.freepik.com/free-photo/doctor-reading-coronavirus-patient-medical-chart_53876-139569.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="slide img"
+            class="parallax-bg"
+            data-swiper-parallax="-23%"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- 
     <section class="hero-slider" id="hero">
       <input type="radio" id="s1" name="slide" checked />
       <input type="radio" id="s2" name="slide" />
@@ -65,7 +136,7 @@
           <label class="dot" for="s3"></label>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="hero" aria-label="خيارات الخدمات الرئيسية + مقدمة">
       <div class="container hero-wrap">
@@ -592,5 +663,9 @@
         </div>
       </div>
     </footer>
+    <!-- JS Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- JS Main File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -136,128 +136,6 @@ header {
   background: #e5e7eb;
 }
 
-/* 2/ سلايد البداية */
-.hero-slider {
-  position: relative;
-  overflow: hidden;
-  height: 420px;
-}
-.hero-viewport {
-  height: 100%;
-  position: relative;
-}
-.hero-slides {
-  display: flex;
-  height: 100%;
-  width: 300%;
-  transition: transform 0.6s ease;
-  animation: heroAuto 18s infinite;
-}
-.hero-slide {
-  flex: 0 0 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-  position: relative;
-}
-.hero-slide:nth-child(1) {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("https://via.placeholder.com/1600x420/1e88e5/ffffff?text=خدمات+طبية")
-      center/cover;
-}
-.hero-slide:nth-child(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("https://via.placeholder.com/1600x420/00bfa6/ffffff?text=حجز+مواعيد")
-      center/cover;
-}
-.hero-slide:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("https://via.placeholder.com/1600x420/ef4444/ffffff?text=طوارئ+24%2F7")
-      center/cover;
-}
-.hero-controls {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-}
-.ctrl {
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(4px);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  user-select: none;
-}
-.ctrl:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-.dots {
-  position: absolute;
-  inset-inline: 0;
-  bottom: 14px;
-  display: flex;
-  gap: 0.45rem;
-  justify-content: center;
-}
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
-  cursor: pointer;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-}
-input[name="slide"] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-#s1:checked ~ .hero-viewport .hero-slides {
-  transform: translateX(0) !important;
-}
-#s2:checked ~ .hero-viewport .hero-slides {
-  transform: translateX(-100%) !important;
-}
-#s3:checked ~ .hero-viewport .hero-slides {
-  transform: translateX(-200%) !important;
-}
-#s1:checked ~ .hero-viewport .dots label[for="s1"],
-#s2:checked ~ .hero-viewport .dots label[for="s2"],
-#s3:checked ~ .hero-viewport .dots label[for="s3"] {
-  background: #fff;
-}
-@keyframes heroAuto {
-  0%,
-  30% {
-    transform: translateX(0);
-  }
-  33%,
-  63% {
-    transform: translateX(-100%);
-  }
-  66%,
-  96% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.hero-slider:hover .hero-slides {
-  animation-play-state: paused;
-}
-
 /* 3/ سلايدر الإعلانات */
 .ads {
   margin-top: 1rem;
@@ -432,3 +310,73 @@ footer {
   padding: 0.35rem 0.7rem;
   font-size: 0.85rem;
 }
+
+.swiper {
+  width: 100%;
+  height: 420px;
+  .swiper-slide {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    padding: 40px 60px;
+    .parallax-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+
+    .subtitle {
+      font-size: 21px;
+    }
+    .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    user-select: none;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.35);
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    &::after {
+      font-size: 14px;
+    }
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+
