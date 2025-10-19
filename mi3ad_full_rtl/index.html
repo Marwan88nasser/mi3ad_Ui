@@ -1,597 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>منصة ميعاد – الرعاية الصحية</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=Tajawal:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container nav">
-        <div class="brand">
-          <div class="brand-logo" aria-hidden="true"></div>
-          <div>
-            <div style="font-size: 1.15rem; line-height: 1">ميعاد</div>
-            <div class="badge">منصة الرعاية الصحية</div>
-          </div>
-        </div>
-        <nav class="top-links">
-          <a class="pill" href="#" aria-label="اختيار اللغة"
-            >العربية / English</a
-          >
-          <span class="divider" aria-hidden="true"></span>
-          <span class="pill">الدولة: اليمن</span>
-          <span class="divider" aria-hidden="true"></span>
-          <a href="#contact">اتصل بنا</a>
-          <a href="#provider-register">سجل كمزود خدمة</a>
-          <a href="#signin">تسجيل الدخول</a>
-          <a href="#join">انضم إلينا</a>
-        </nav>
-      </div>
-    </header>
-
-    <section class="hero-slider" id="hero">
-      <input type="radio" id="s1" name="slide" checked />
-      <input type="radio" id="s2" name="slide" />
-      <input type="radio" id="s3" name="slide" />
-      <div class="hero-viewport">
-        <div class="hero-slides">
-          <div
-            class="hero-slide"
-            style="
-              background-image: url('./assets/img/patient-rooms-1.jpg');background-repeat: no-repeat; background-size: cover; background-position: center
-            "
-          >
-            خدمات طبية شاملة
-          </div>
-          <div
-            class="hero-slide"
-            style="background-image: url('./assets/img/download.jpeg')"
-          >
-            احجز مواعيدك بسهولة
-          </div>
-          <div
-            class="hero-slide"
-            style="background-image: url('./assets/img/images.jpeg')"
-          >
-            خدمة الطوارئ 24/7
-          </div>
-        </div>
-        <div class="hero-controls" aria-label="أزرار التنقّل">
-          <label class="ctrl" for="s1">‹</label>
-          <label class="ctrl" for="s3">›</label>
-        </div>
-        <div class="dots" aria-label="مؤشرات الشرائح">
-          <label class="dot" for="s1"></label>
-          <label class="dot" for="s2"></label>
-          <label class="dot" for="s3"></label>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero" aria-label="خيارات الخدمات الرئيسية + مقدمة">
-      <div class="container hero-wrap">
-        <div class="hero-card">
-          <h1 class="title">
-            منصّة مرنة وسريعة لتسهيل الوصول إلى خدمات الرعاية الصحية
-          </h1>
-          <p class="subtitle">
-            ابحث عن الأطباء، العيادات، المستشفيات والخدمات العلاجية، واحجز
-            مواعيدك بسهولة وشفافية.
-          </p>
-          <div class="service-list" aria-label="خيارات خدمات رئيسية بارزة">
-            <a class="service" href="#specialties-list"
-              ><div class="icon">🏥</div>
-              <div>
-                <div style="font-weight: 700">كشف عيادة طبيب</div>
-                <div class="meta">(ملحوظة 1) يفتح قائمة التخصصات والبحث</div>
-              </div></a
-            >
-            <a class="service" href="#tele-consult"
-              ><div class="icon">📞</div>
-              <div>
-                <div style="font-weight: 700">
-                  استشارة هاتفية (صوتية / فيديو)
-                </div>
-                <div class="meta">تواصل سريع من منزلك</div>
-              </div></a
-            >
-            <a class="service" href="#home-care"
-              ><div class="icon">🏠</div>
-              <div>
-                <div style="font-weight: 700">رعاية منزلية</div>
-                <div class="meta">(7) صفحة خدمات وزيارات منزلية</div>
-              </div></a
-            >
-            <a class="service" href="#emergency"
-              ><div class="icon">⏱️</div>
-              <div>
-                <div style="font-weight: 700">خدمة طارئة</div>
-                <div class="meta">(9) اعرض الأطباء المتاحين الآن</div>
-              </div></a
-            >
-            <a class="service" href="#other-services"
-              ><div class="icon">🧪</div>
-              <div>
-                <div style="font-weight: 700">خدمات طبية أخرى</div>
-                <div class="meta">(8) خدمات المنشآت مع الأسعار</div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container ads" aria-label="شريط إعلانات">
-      <div
-        class="slider"
-        style="background-image: url('./assets/img/doctors-hospital-design-videoSixteenByNineJumbo1600.jpg');background-repeat: no-repeat; background-size: cover; background-position: center"
-      >
-        <div class="slides">
-          <a class="slide" href="#profile-hospital-1">إعلان — مستشفى الأمل</a>
-          <a class="slide" href="#profile-clinic-2" style="background: #fde68a"
-            >إعلان — عيادة الأسرة</a
-          >
-          <a class="slide" href="#profile-center-3" style="background: #bbf7d0"
-            >إعلان — مركز الفحص الشامل</a
-          >
-        </div>
-      </div>
-      <p class="meta" style="margin: 0.5rem 0 0">
-        عند الضغط على أي إعلان يتم الانتقال إلى بروفايل مزود الخدمة.
-      </p>
-    </section>
-
-    <section class="container search" id="advanced-search">
-      <form>
-        <div class="field">
-          <label>اختيار التخصص</label
-          ><select>
-            <option>الطب العام</option>
-            <option>أطفال</option>
-            <option>نساء وولادة</option>
-            <option>باطنية</option>
-            <option>أسنان</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>اختيار الدولة</label
-          ><select>
-            <option selected>اليمن</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>اختيار المحافظة / المديرية المدينة</label
-          ><input type="text" placeholder="مثال: صنعاء — السبعين" />
-        </div>
-        <div class="field">
-          <label>اسم الطبيب أو المنشأة</label
-          ><input type="text" placeholder="اكتب اسم الطبيب أو المنشأة" />
-        </div>
-        <div class="field">
-          <label>طريقة الخدمة</label
-          ><select>
-            <option>زيارة عيادة</option>
-            <option>استشارة</option>
-            <option>رعاية منزلية</option>
-            <option>خدمة طارئة</option>
-          </select>
-        </div>
-        <button class="btn primary" type="button">ابحث الآن</button>
-      </form>
-      <p class="meta" style="margin: 0.6rem 0 0">
-        ملحوظة: عند اختيار تخصص + استشارة، تظهر الأطباء المتاحين بتلك الطريقة.
-      </p>
-    </section>
-
-    <section id="suggested-centers" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="title">المراكز والمستشفيات المقترحة</h2>
-          <span class="pill">وفق التقييم العالي والترويج المدفوع</span>
-        </div>
-        <div class="grid cols-3">
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">مستشفى الحياة</div>
-                <div class="meta">صنعاء — عدد التخصصات: 12</div>
-              </div>
-            </div>
-            <a class="btn ghost" href="#profile-hospital-1">زيارة البروفايل</a>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">مركز الشفاء الطبي</div>
-                <div class="meta">عدن — عدد التخصصات: 7</div>
-              </div>
-            </div>
-            <a class="btn ghost" href="#profile-center-3">زيارة البروفايل</a>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">عيادات الأسرة</div>
-                <div class="meta">تعز — عدد التخصصات: 5</div>
-              </div>
-            </div>
-            <a class="btn ghost" href="#profile-clinic-2">زيارة البروفايل</a>
-          </article>
-        </div>
-        <p class="meta" style="margin-top: 0.6rem">
-          (ملحوظة 1) عند الضغط على "كشف عيادة طبيب" يتم فتح شاشة قائمة التخصصات
-          والبحث لعرض بطاقات الأطباء حسب الأعلى تقييم والممولين أولًا.
-        </p>
-      </div>
-    </section>
-
-    <section id="top-booked" class="section" aria-label="Top booked">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="title">المراكز الأكثر حجزًا</h2>
-          <span class="pill">ترتيب تلقائي حسب عدد الحجوزات</span>
-        </div>
-        <div class="grid cols-3">
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">مركز الفحص الشامل</div>
-                <div class="meta">أعلى حجوزات هذا الأسبوع</div>
-              </div>
-            </div>
-            <button class="btn primary" type="button">احجز الآن</button>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">مستشفى الهدى</div>
-                <div class="meta">نسبة رضا 4.8/5</div>
-              </div>
-            </div>
-            <button class="btn primary" type="button">احجز الآن</button>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">عيادة الأسنان المتخصصة</div>
-                <div class="meta">حجوزات متزايدة</div>
-              </div>
-            </div>
-            <button class="btn primary" type="button">احجز الآن</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="home-care" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="title">الرعاية المنزلية</h2>
-          <a class="btn primary" href="#home-care-search">احجز زيارة منزلية</a>
-        </div>
-        <div id="home-care-search" class="card">
-          <h3 class="title" style="font-size: 1.2rem">
-            خدمات الرعاية المنزلية المتاحة
-          </h3>
-          <p class="meta">
-            تُعرض جميع الخدمات المدخلة من إدارة النظام والمتاحة من المزودين
-            المفعّلين لتقديمها. وتُرتّب النتائج حسب الأعلى تقييمًا والممولين
-            للظهور أولًا.
-          </p>
-          <div class="hc-filters">
-            <div class="field">
-              <label>نوع مزود الخدمة</label
-              ><select>
-                <option>ذكر</option>
-                <option>أنثى</option>
-              </select>
-            </div>
-            <div class="field">
-              <label>اختيار المحافظة</label
-              ><input type="text" placeholder="مثال: صنعاء" />
-            </div>
-            <div class="field">
-              <label>المديرية المدينة</label
-              ><input type="text" placeholder="مثال: السبعين" />
-            </div>
-            <div class="field">
-              <label>نوع الخدمة المنزلية</label
-              ><select>
-                <option>تمريض منزلي</option>
-                <option>علاج طبيعي</option>
-                <option>سحب عينات</option>
-                <option>عناية مسنين</option>
-              </select>
-            </div>
-          </div>
-          <div class="grid cols-3">
-            <article class="card">
-              <div class="card-head">
-                <div class="avatar"></div>
-                <div>
-                  <strong>علاج طبيعي منزلي</strong>
-                  <div class="meta">مزودون متاحون الآن</div>
-                </div>
-              </div>
-              <button class="btn ghost">عرض المزودين</button>
-            </article>
-            <article class="card">
-              <div class="card-head">
-                <div class="avatar"></div>
-                <div>
-                  <strong>تمريض منزلي</strong>
-                  <div class="meta">24/7</div>
-                </div>
-              </div>
-              <button class="btn ghost">عرض المزودين</button>
-            </article>
-            <article class="card">
-              <div class="card-head">
-                <div class="avatar"></div>
-                <div>
-                  <strong>سحب عينات</strong>
-                  <div class="meta">نتائج سريعة</div>
-                </div>
-              </div>
-              <button class="btn ghost">عرض المزودين</button>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="other-services" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="title">الخدمات الطبية الأخرى</h2>
-          <span class="pill">الأكثر حجزًا</span>
-        </div>
-        <div class="search" style="margin: 0 0 1rem 0">
-          <form>
-            <div class="field">
-              <label>نوع الخدمة</label
-              ><input type="text" placeholder="مثال: أشعة، تحاليل..." />
-            </div>
-            <div class="field">
-              <label>المنشأة</label
-              ><input type="text" placeholder="اسم المستشفى أو العيادة" />
-            </div>
-            <div class="field">
-              <label>المحافظة/المديرية</label
-              ><input type="text" placeholder="مثال: عدن — خورمكسر" />
-            </div>
-            <button class="btn primary" type="button">بحث</button>
-          </form>
-        </div>
-        <div class="grid cols-3">
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">باقات التحاليل الأساسية</div>
-                <div class="meta">المُقدِّم: مختبر المدى</div>
-              </div>
-            </div>
-            <p class="meta">وصف مختصر للخدمة.</p>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 0.6rem;
-              "
-            >
-              <strong>السعر: 18,000 ریال</strong
-              ><button class="btn ghost">تفاصيل وحجز</button>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">أشعة سينية للصدر</div>
-                <div class="meta">المُقدِّم: مستشفى الحياة</div>
-              </div>
-            </div>
-            <p class="meta">وصف مختصر للخدمة.</p>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 0.6rem;
-              "
-            >
-              <strong>السعر: 12,000 ریال</strong
-              ><button class="btn ghost">تفاصيل وحجز</button>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <div style="font-weight: 700">تنظيف أسنان للأطفال</div>
-                <div class="meta">المُقدِّم: عيادات الأسرة</div>
-              </div>
-            </div>
-            <p class="meta">وصف مختصر للخدمة.</p>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 0.6rem;
-              "
-            >
-              <strong>السعر: 9,000 ریال</strong
-              ><button class="btn ghost">تفاصيل وحجز</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="emergency" class="section emergency">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="title">خدمة الطوارئ</h2>
-          <a class="btn warn" href="#emergency-list">خدمة طوارئ الآن</a>
-        </div>
-        <div id="emergency-list" class="grid cols-3">
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <strong>د. أحمد — باطنية</strong>
-                <div class="meta">متاح الآن (حجز طارئ)</div>
-              </div>
-            </div>
-            <button class="btn primary">حجز طارئ</button>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <strong>مستشفى الهدى</strong>
-                <div class="meta">استقبال طوارئ 24/7</div>
-              </div>
-            </div>
-            <button class="btn primary">الاتصال بقسم الطوارئ</button>
-          </article>
-          <article class="card">
-            <div class="card-head">
-              <div class="avatar"></div>
-              <div>
-                <strong>د. سارة — أطفال</strong>
-                <div class="meta">قريبًا متاح</div>
-              </div>
-            </div>
-            <button class="btn ghost">أبلغني عند التوفر</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <div class="about">
-          <h2 class="title">لمحة عن منصة ميعاد</h2>
-          <p>
-            منصة "ميعاد" هي منصة رقمية مرنة وسريعة مخصصة لتسهيل الوصول إلى خدمات
-            الرعاية الصحية داخل اليمن وخارجها. تُقدّم تجربة متجاوبة وعصرية تدعم
-            العربية والإنجليزية، وتضم تصنيفات، فلاتر، استشارات، محافظ إلكترونية،
-            وتتبع للحجوزات بشفافية تامة، مع التزام كامل بأمان بيانات المستخدمين.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="apps" class="section">
-      <div class="container">
-        <div class="grid cols-2 card" style="align-items: center">
-          <div>
-            <h2 class="title">حمّل تطبيقات ميعاد</h2>
-            <p class="subtitle">احجز بسهولة من جوّالك أينما كنت.</p>
-            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap">
-              <a class="btn primary" href="#">Google Play</a
-              ><a class="btn ghost" href="#">App Store</a>
-            </div>
-          </div>
-          <div>
-            <div
-              style="
-                height: 220px;
-                border-radius: 20px;
-                background: linear-gradient(135deg, #e5e7eb, #fff);
-                display: grid;
-                place-items: center;
-              "
-            >
-              موكअप التطبيق
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container footer-wrap">
-        <div>
-          <div class="brand" style="color: #fff">
-            <div class="brand-logo"></div>
-            <div>
-              <div style="font-size: 1.1rem">ميعاد</div>
-              <div class="meta" style="color: #9ca3af">منصة الرعاية الصحية</div>
-            </div>
-          </div>
-          <p class="meta" style="margin-top: 0.6rem">
-            واجهة ويب متجاوبة (HTML/CSS) وفق الترتيب والمسميات المطلوبة، مع دعم
-            RTL.
-          </p>
-          <div class="social" aria-label="منصات التواصل">
-            <a href="#" aria-label="Twitter" title="Twitter">𝕏</a
-            ><a href="#" aria-label="Facebook" title="Facebook">f</a
-            ><a href="#" aria-label="Instagram" title="Instagram">⌂</a
-            ><a href="#" aria-label="YouTube" title="YouTube">▶</a>
-          </div>
-        </div>
-        <div>
-          <strong>روابط مهمة</strong>
-          <ul
-            style="
-              list-style: none;
-              padding: 0;
-              margin: 0.6rem 0 0;
-              display: grid;
-              gap: 0.4rem;
-            "
-          >
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-            <li><a href="#complaints">الشكاوى والبلاغات</a></li>
-            <li><a href="#provider-register">سجل كمزود خدمة</a></li>
-            <li><a href="#policies">السياسات والشروط</a></li>
-            <li><a href="#apps">تحميل التطبيق</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>التطبيقات</strong>
-          <ul
-            style="
-              list-style: none;
-              padding: 0;
-              margin: 0.6rem 0 0;
-              display: grid;
-              gap: 0.4rem;
-            "
-          >
-            <li><a href="#apps">App Store</a></li>
-            <li><a href="#apps">Google Play</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>تذكير</strong>
-          <p class="meta">
-            الدولة ثابتة: اليمن. يدعم العربية/الإنجليزية. جميع الأسماء والمسميات
-            بالترتيب المطلوب.
-          </p>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
