@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>منصة ميعاد – الرعاية الصحية</title>
+    <!-- CSS Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,9 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=Tajawal:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
+    <!-- 1/ الهيدر (ثابت في جميع الصفحات) -->
     <header>
       <div class="container nav">
         <div class="brand">
@@ -38,32 +44,16 @@
       </div>
     </header>
 
+    <!-- 2/ قسم (Hero Section) مع خيارات الخدمات الرئيسية -->
     <section class="hero-slider" id="hero">
       <input type="radio" id="s1" name="slide" checked />
       <input type="radio" id="s2" name="slide" />
       <input type="radio" id="s3" name="slide" />
       <div class="hero-viewport">
         <div class="hero-slides">
-          <div
-            class="hero-slide"
-            style="
-              background-image: url('./assets/img/patient-rooms-1.jpg');background-repeat: no-repeat; background-size: cover; background-position: center
-            "
-          >
-            خدمات طبية شاملة
-          </div>
-          <div
-            class="hero-slide"
-            style="background-image: url('./assets/img/download.jpeg')"
-          >
-            احجز مواعيدك بسهولة
-          </div>
-          <div
-            class="hero-slide"
-            style="background-image: url('./assets/img/images.jpeg')"
-          >
-            خدمة الطوارئ 24/7
-          </div>
+          <div class="hero-slide">خدمات طبية شاملة</div>
+          <div class="hero-slide">احجز مواعيدك بسهولة</div>
+          <div class="hero-slide">خدمة الطوارئ 24/7</div>
         </div>
         <div class="hero-controls" aria-label="أزرار التنقّل">
           <label class="ctrl" for="s1">‹</label>
@@ -88,53 +78,51 @@
             مواعيدك بسهولة وشفافية.
           </p>
           <div class="service-list" aria-label="خيارات خدمات رئيسية بارزة">
-            <a class="service" href="#specialties-list"
-              ><div class="icon">🏥</div>
+            <a class="service" href="#specialties-list">
+              <div class="icon">🏥</div>
               <div>
                 <div style="font-weight: 700">كشف عيادة طبيب</div>
                 <div class="meta">(ملحوظة 1) يفتح قائمة التخصصات والبحث</div>
-              </div></a
-            >
-            <a class="service" href="#tele-consult"
-              ><div class="icon">📞</div>
+              </div>
+            </a>
+            <a class="service" href="#tele-consult">
+              <div class="icon">📞</div>
               <div>
                 <div style="font-weight: 700">
                   استشارة هاتفية (صوتية / فيديو)
                 </div>
                 <div class="meta">تواصل سريع من منزلك</div>
-              </div></a
-            >
-            <a class="service" href="#home-care"
-              ><div class="icon">🏠</div>
+              </div>
+            </a>
+            <a class="service" href="#home-care">
+              <div class="icon">🏠</div>
               <div>
                 <div style="font-weight: 700">رعاية منزلية</div>
                 <div class="meta">(7) صفحة خدمات وزيارات منزلية</div>
-              </div></a
-            >
-            <a class="service" href="#emergency"
-              ><div class="icon">⏱️</div>
+              </div>
+            </a>
+            <a class="service" href="#emergency">
+              <div class="icon">⏱️</div>
               <div>
                 <div style="font-weight: 700">خدمة طارئة</div>
                 <div class="meta">(9) اعرض الأطباء المتاحين الآن</div>
-              </div></a
-            >
-            <a class="service" href="#other-services"
-              ><div class="icon">🧪</div>
+              </div>
+            </a>
+            <a class="service" href="#other-services">
+              <div class="icon">🧪</div>
               <div>
                 <div style="font-weight: 700">خدمات طبية أخرى</div>
                 <div class="meta">(8) خدمات المنشآت مع الأسعار</div>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 3/ قسم الإعلانات (سلايدر صور) -->
     <section class="container ads" aria-label="شريط إعلانات">
-      <div
-        class="slider"
-        style="background-image: url('./assets/img/doctors-hospital-design-videoSixteenByNineJumbo1600.jpg');background-repeat: no-repeat; background-size: cover; background-position: center"
-      >
+      <div class="slider">
         <div class="slides">
           <a class="slide" href="#profile-hospital-1">إعلان — مستشفى الأمل</a>
           <a class="slide" href="#profile-clinic-2" style="background: #fde68a"
@@ -150,11 +138,12 @@
       </p>
     </section>
 
+    <!-- 4/ محرك بحث متقدم -->
     <section class="container search" id="advanced-search">
       <form>
         <div class="field">
-          <label>اختيار التخصص</label
-          ><select>
+          <label>اختيار التخصص</label>
+          <select>
             <option>الطب العام</option>
             <option>أطفال</option>
             <option>نساء وولادة</option>
@@ -163,22 +152,22 @@
           </select>
         </div>
         <div class="field">
-          <label>اختيار الدولة</label
-          ><select>
+          <label>اختيار الدولة</label>
+          <select>
             <option selected>اليمن</option>
           </select>
         </div>
         <div class="field">
-          <label>اختيار المحافظة / المديرية المدينة</label
-          ><input type="text" placeholder="مثال: صنعاء — السبعين" />
+          <label>اختيار المحافظة / المديرية المدينة</label>
+          <input type="text" placeholder="مثال: صنعاء — السبعين" />
         </div>
         <div class="field">
-          <label>اسم الطبيب أو المنشأة</label
-          ><input type="text" placeholder="اكتب اسم الطبيب أو المنشأة" />
+          <label>اسم الطبيب أو المنشأة</label>
+          <input type="text" placeholder="اكتب اسم الطبيب أو المنشأة" />
         </div>
         <div class="field">
-          <label>طريقة الخدمة</label
-          ><select>
+          <label>طريقة الخدمة</label>
+          <select>
             <option>زيارة عيادة</option>
             <option>استشارة</option>
             <option>رعاية منزلية</option>
@@ -192,6 +181,7 @@
       </p>
     </section>
 
+    <!-- 5/ المراكز والمستشفيات المقترحة (الظهور أولاً) -->
     <section id="suggested-centers" class="section">
       <div class="container">
         <div class="section-head">
@@ -237,6 +227,7 @@
       </div>
     </section>
 
+    <!-- 6/ المراكز الأكثر حجزًا -->
     <section id="top-booked" class="section" aria-label="Top booked">
       <div class="container">
         <div class="section-head">
@@ -252,7 +243,9 @@
                 <div class="meta">أعلى حجوزات هذا الأسبوع</div>
               </div>
             </div>
-            <button class="btn primary" type="button">احجز الآن</button>
+            <button class="btn primary" type="button" onclick="">
+              احجز الآن
+            </button>
           </article>
           <article class="card">
             <div class="card-head">
@@ -278,6 +271,7 @@
       </div>
     </section>
 
+    <!-- 7/ قسم الرعاية المنزلية -->
     <section id="home-care" class="section">
       <div class="container">
         <div class="section-head">
@@ -355,6 +349,7 @@
       </div>
     </section>
 
+    <!-- 8/ قسم الخدمات الطبية الأخرى (الخاصة بالمنشآت) -->
     <section id="other-services" class="section">
       <div class="container">
         <div class="section-head">
@@ -446,6 +441,7 @@
       </div>
     </section>
 
+    <!-- 9/ قسم خدمة الطوارئ -->
     <section id="emergency" class="section emergency">
       <div class="container">
         <div class="section-head">
@@ -487,6 +483,7 @@
       </div>
     </section>
 
+    <!-- 10/ قسم لمحة عن منصة ميعاد -->
     <section id="about" class="section">
       <div class="container">
         <div class="about">
@@ -501,6 +498,7 @@
       </div>
     </section>
 
+    <!-- 11/ قسم تحميل تطبيقات ميعاد -->
     <section id="apps" class="section">
       <div class="container">
         <div class="grid cols-2 card" style="align-items: center">
@@ -508,8 +506,8 @@
             <h2 class="title">حمّل تطبيقات ميعاد</h2>
             <p class="subtitle">احجز بسهولة من جوّالك أينما كنت.</p>
             <div style="display: flex; gap: 0.6rem; flex-wrap: wrap">
-              <a class="btn primary" href="#">Google Play</a
-              ><a class="btn ghost" href="#">App Store</a>
+              <a class="btn primary" href="#">Google Play</a>
+              <a class="btn ghost" href="#">App Store</a>
             </div>
           </div>
           <div>
@@ -529,6 +527,7 @@
       </div>
     </section>
 
+    <!-- 12/ الفوتر (ثابت) -->
     <footer>
       <div class="container footer-wrap">
         <div>
@@ -544,10 +543,10 @@
             RTL.
           </p>
           <div class="social" aria-label="منصات التواصل">
-            <a href="#" aria-label="Twitter" title="Twitter">𝕏</a
-            ><a href="#" aria-label="Facebook" title="Facebook">f</a
-            ><a href="#" aria-label="Instagram" title="Instagram">⌂</a
-            ><a href="#" aria-label="YouTube" title="YouTube">▶</a>
+            <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+            <a href="#" aria-label="Facebook" title="Facebook">f</a>
+            <a href="#" aria-label="Instagram" title="Instagram">⌂</a>
+            <a href="#" aria-label="YouTube" title="YouTube">▶</a>
           </div>
         </div>
         <div>
