@@ -139,7 +139,7 @@ header {
   flex-direction: column;
   gap: 0.35rem;
   label {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--muted);
   }
   input,
@@ -173,9 +173,12 @@ header {
   }
 }
 
+
 .meta {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 /* 7/ فلاتر الرعاية المنزلية */
@@ -603,12 +606,6 @@ footer {
   }
 }
 
-.meta {
-  color: var(--muted);
-  font-size: 0.92rem;
-  margin-top: 1rem;
-  text-align: center;
-}
 
 @media (max-width: 768px) {
   .ads-swiper {
