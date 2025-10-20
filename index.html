@@ -47,16 +47,16 @@
             </div>
           </div>
           <nav class="top-links">
+            <a href="#contact">اتصل بنا</a>
+            <a href="#provider-register">سجل كمزود خدمة</a>
+            <a href="#signin">تسجيل الدخول</a>
+            <a href="#join">انضم إلينا</a>
+            <span class="divider" aria-hidden="true"></span>
             <a class="pill" href="#" aria-label="اختيار اللغة"
               >العربية / English</a
             >
             <span class="divider" aria-hidden="true"></span>
             <span class="pill">الدولة: اليمن</span>
-            <span class="divider" aria-hidden="true"></span>
-            <a href="#contact">اتصل بنا</a>
-            <a href="#provider-register">سجل كمزود خدمة</a>
-            <a href="#signin">تسجيل الدخول</a>
-            <a href="#join">انضم إلينا</a>
           </nav>
         </div>
       </div>
@@ -201,72 +201,156 @@
       </div>
     </section>
 
-    <!-- 3/ قسم الإعلانات (سلايدر صور) -->
-    <section class="container ads" aria-label="شريط إعلانات">
-      <div class="slider">
-        <div class="slides">
-          <a class="slide" href="#profile-hospital-1">إعلان — مستشفى الأمل</a>
-          <a class="slide" href="#profile-clinic-2" style="background: #fde68a"
-            >إعلان — عيادة الأسرة</a
-          >
-          <a class="slide" href="#profile-center-3" style="background: #bbf7d0"
-            >إعلان — مركز الفحص الشامل</a
-          >
+    <!-- قسم الإعلانات -->
+    <section class="ads py-4">
+      <div class="container">
+        <h2 class="section-title">عروض وإعلانات مميزة</h2>
+
+        <div class="swiper ads-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <a class="slide-link" href="#profile-hospital-1">
+                <img
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=400&fit=crop"
+                  alt="مستشفى الأمل"
+                  class="slide-image"
+                />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <span class="slide-badge">إعلان مميز</span>
+                  <h3 class="slide-title">مستشفى الأمل</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <a class="slide-link" href="#profile-clinic-2">
+                <img
+                  src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&h=400&fit=crop"
+                  alt="عيادة الأسرة"
+                  class="slide-image"
+                />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <span class="slide-badge">إعلان مميز</span>
+                  <h3 class="slide-title">عيادة الأسرة</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <a class="slide-link" href="#profile-center-3">
+                <img
+                  src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&h=400&fit=crop"
+                  alt="مركز الفحص الشامل"
+                  class="slide-image"
+                />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <span class="slide-badge">إعلان مميز</span>
+                  <h3 class="slide-title">مركز الفحص الشامل</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <a class="slide-link" href="#profile-hospital-2">
+                <img
+                  src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=1200&h=400&fit=crop"
+                  alt="مستشفى النور"
+                  class="slide-image"
+                />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <span class="slide-badge">إعلان مميز</span>
+                  <h3 class="slide-title">مستشفى النور</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <a class="slide-link" href="#profile-clinic-3">
+                <img
+                  src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&h=400&fit=crop"
+                  alt="عيادة الأسنان المتخصصة"
+                  class="slide-image"
+                />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <span class="slide-badge">إعلان مميز</span>
+                  <h3 class="slide-title">عيادة الأسنان المتخصصة</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
+
+        <p class="meta">
+          عند الضغط على أي إعلان يتم الانتقال إلى بروفايل مزود الخدمة
+        </p>
       </div>
-      <p class="meta" style="margin: 0.5rem 0 0">
-        عند الضغط على أي إعلان يتم الانتقال إلى بروفايل مزود الخدمة.
-      </p>
     </section>
 
     <!-- 4/ محرك بحث متقدم -->
-    <section class="container search" id="advanced-search">
-      <form>
-        <div class="field">
-          <label>اختيار التخصص</label>
-          <select>
-            <option>الطب العام</option>
-            <option>أطفال</option>
-            <option>نساء وولادة</option>
-            <option>باطنية</option>
-            <option>أسنان</option>
-          </select>
+    <section class="search-doctor py-4" id="advanced-search">
+      <div class="container">
+        <div class="search">
+          <form class="form-grid">
+            <div class="field">
+              <label>اختيار التخصص</label>
+              <select>
+                <option>الطب العام</option>
+                <option>أطفال</option>
+                <option>نساء وولادة</option>
+                <option>باطنية</option>
+                <option>أسنان</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>اختيار الدولة</label>
+              <select>
+                <option selected>اليمن</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>اختيار المحافظة / المديرية المدينة</label>
+              <input type="text" placeholder="مثال: صنعاء — السبعين" />
+            </div>
+            <div class="field">
+              <label>اسم الطبيب أو المنشأة</label>
+              <input type="text" placeholder="اكتب اسم الطبيب أو المنشأة" />
+            </div>
+            <div class="field">
+              <label>طريقة الخدمة</label>
+              <select>
+                <option>زيارة عيادة</option>
+                <option>استشارة</option>
+                <option>رعاية منزلية</option>
+                <option>خدمة طارئة</option>
+              </select>
+            </div>
+            <button class="btn primary" type="button">ابحث الآن</button>
+          </form>
+          <p class="meta" style="margin: 0.7rem 0 0">
+            ملحوظة: عند اختيار تخصص + استشارة، تظهر الأطباء المتاحين بتلك الطريقة.
+          </p>
         </div>
-        <div class="field">
-          <label>اختيار الدولة</label>
-          <select>
-            <option selected>اليمن</option>
-          </select>
         </div>
-        <div class="field">
-          <label>اختيار المحافظة / المديرية المدينة</label>
-          <input type="text" placeholder="مثال: صنعاء — السبعين" />
-        </div>
-        <div class="field">
-          <label>اسم الطبيب أو المنشأة</label>
-          <input type="text" placeholder="اكتب اسم الطبيب أو المنشأة" />
-        </div>
-        <div class="field">
-          <label>طريقة الخدمة</label>
-          <select>
-            <option>زيارة عيادة</option>
-            <option>استشارة</option>
-            <option>رعاية منزلية</option>
-            <option>خدمة طارئة</option>
-          </select>
-        </div>
-        <button class="btn primary" type="button">ابحث الآن</button>
-      </form>
-      <p class="meta" style="margin: 0.6rem 0 0">
-        ملحوظة: عند اختيار تخصص + استشارة، تظهر الأطباء المتاحين بتلك الطريقة.
-      </p>
     </section>
 
     <!-- 5/ المراكز والمستشفيات المقترحة (الظهور أولاً) -->
-    <section id="suggested-centers" class="section">
+    <section class="suggested-centers py-4" id="suggested-centers">
       <div class="container">
         <div class="section-head">
-          <h2 class="title">المراكز والمستشفيات المقترحة</h2>
+          <h2 class="section-title">المراكز والمستشفيات المقترحة</h2>
           <span class="pill">وفق التقييم العالي والترويج المدفوع</span>
         </div>
         <div class="grid cols-3">
@@ -275,7 +359,7 @@
               <div class="avatar"></div>
               <div>
                 <div style="font-weight: 700">مستشفى الحياة</div>
-                <div class="meta">صنعاء — عدد التخصصات: 12</div>
+                <div class="meta mt-1">صنعاء — عدد التخصصات: 12</div>
               </div>
             </div>
             <a class="btn ghost" href="#profile-hospital-1">زيارة البروفايل</a>
@@ -285,7 +369,7 @@
               <div class="avatar"></div>
               <div>
                 <div style="font-weight: 700">مركز الشفاء الطبي</div>
-                <div class="meta">عدن — عدد التخصصات: 7</div>
+                <div class="meta mt-1">عدن — عدد التخصصات: 7</div>
               </div>
             </div>
             <a class="btn ghost" href="#profile-center-3">زيارة البروفايل</a>
@@ -295,13 +379,13 @@
               <div class="avatar"></div>
               <div>
                 <div style="font-weight: 700">عيادات الأسرة</div>
-                <div class="meta">تعز — عدد التخصصات: 5</div>
+                <div class="meta mt-1">تعز — عدد التخصصات: 5</div>
               </div>
             </div>
             <a class="btn ghost" href="#profile-clinic-2">زيارة البروفايل</a>
           </article>
         </div>
-        <p class="meta" style="margin-top: 0.6rem">
+        <p class="meta" style="margin-top: 0.8rem">
           (ملحوظة 1) عند الضغط على "كشف عيادة طبيب" يتم فتح شاشة قائمة التخصصات
           والبحث لعرض بطاقات الأطباء حسب الأعلى تقييم والممولين أولًا.
         </p>
@@ -309,10 +393,10 @@
     </section>
 
     <!-- 6/ المراكز الأكثر حجزًا -->
-    <section id="top-booked" class="section" aria-label="Top booked">
+    <section id="top-booked" class="py-4">
       <div class="container">
         <div class="section-head">
-          <h2 class="title">المراكز الأكثر حجزًا</h2>
+          <h2 class="section-title">المراكز الأكثر حجزًا</h2>
           <span class="pill">ترتيب تلقائي حسب عدد الحجوزات</span>
         </div>
         <div class="grid cols-3">
@@ -321,7 +405,7 @@
               <div class="avatar"></div>
               <div>
                 <div style="font-weight: 700">مركز الفحص الشامل</div>
-                <div class="meta">أعلى حجوزات هذا الأسبوع</div>
+                <div class="meta mt-1">أعلى حجوزات هذا الأسبوع</div>
               </div>
             </div>
             <button class="btn primary" type="button" onclick="">
@@ -333,7 +417,7 @@
               <div class="avatar"></div>
               <div>
                 <div style="font-weight: 700">مستشفى الهدى</div>
-                <div class="meta">نسبة رضا 4.8/5</div>
+                <div class="meta mt-1">نسبة رضا 4.8/5</div>
               </div>
             </div>
             <button class="btn primary" type="button">احجز الآن</button>
@@ -343,7 +427,7 @@
               <div class="avatar"></div>
               <div>
                 <div style="font-weight: 700">عيادة الأسنان المتخصصة</div>
-                <div class="meta">حجوزات متزايدة</div>
+                <div class="meta mt-1">حجوزات متزايدة</div>
               </div>
             </div>
             <button class="btn primary" type="button">احجز الآن</button>
@@ -353,22 +437,22 @@
     </section>
 
     <!-- 7/ قسم الرعاية المنزلية -->
-    <section id="home-care" class="section">
+    <section id="home-care" class="py-4">
       <div class="container">
         <div class="section-head">
-          <h2 class="title">الرعاية المنزلية</h2>
+          <h2 class="section-title">الرعاية المنزلية</h2>
           <a class="btn primary" href="#home-care-search">احجز زيارة منزلية</a>
         </div>
         <div id="home-care-search" class="card">
-          <h3 class="title" style="font-size: 1.2rem">
+          <h3 class="title text-center" style="font-size: 1.2rem; font-weight: 600;">
             خدمات الرعاية المنزلية المتاحة
           </h3>
-          <p class="meta">
+          <p class="meta mt-1">
             تُعرض جميع الخدمات المدخلة من إدارة النظام والمتاحة من المزودين
             المفعّلين لتقديمها. وتُرتّب النتائج حسب الأعلى تقييمًا والممولين
             للظهور أولًا.
           </p>
-          <div class="hc-filters">
+          <div class="hc-filters mb-3">
             <div class="field">
               <label>نوع مزود الخدمة</label
               ><select>
@@ -400,7 +484,7 @@
                 <div class="avatar"></div>
                 <div>
                   <strong>علاج طبيعي منزلي</strong>
-                  <div class="meta">مزودون متاحون الآن</div>
+                  <div class="meta mt-1">مزودون متاحون الآن</div>
                 </div>
               </div>
               <button class="btn ghost">عرض المزودين</button>
@@ -410,7 +494,7 @@
                 <div class="avatar"></div>
                 <div>
                   <strong>تمريض منزلي</strong>
-                  <div class="meta">24/7</div>
+                  <div class="meta mt-1">24/7</div>
                 </div>
               </div>
               <button class="btn ghost">عرض المزودين</button>
@@ -420,7 +504,7 @@
                 <div class="avatar"></div>
                 <div>
                   <strong>سحب عينات</strong>
-                  <div class="meta">نتائج سريعة</div>
+                  <div class="meta mt-1">نتائج سريعة</div>
                 </div>
               </div>
               <button class="btn ghost">عرض المزودين</button>
@@ -431,27 +515,35 @@
     </section>
 
     <!-- 8/ قسم الخدمات الطبية الأخرى (الخاصة بالمنشآت) -->
-    <section id="other-services" class="section">
+    <section id="other-services" class="py-4">
       <div class="container">
         <div class="section-head">
-          <h2 class="title">الخدمات الطبية الأخرى</h2>
+          <h2 class="section-title">الخدمات الطبية الأخرى</h2>
           <span class="pill">الأكثر حجزًا</span>
         </div>
-        <div class="search" style="margin: 0 0 1rem 0">
-          <form>
-            <div class="field">
-              <label>نوع الخدمة</label
-              ><input type="text" placeholder="مثال: أشعة، تحاليل..." />
+        <div class="search mb-3">
+          <form class="row g-3 align-items-end">
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="field">
+                <label>نوع الخدمة</label
+                ><input type="text" placeholder="مثال: أشعة، تحاليل..." />
+              </div>
             </div>
-            <div class="field">
-              <label>المنشأة</label
-              ><input type="text" placeholder="اسم المستشفى أو العيادة" />
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="field">
+                <label>المنشأة</label
+                ><input type="text" placeholder="اسم المستشفى أو العيادة" />
+              </div>
             </div>
-            <div class="field">
-              <label>المحافظة/المديرية</label
-              ><input type="text" placeholder="مثال: عدن — خورمكسر" />
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="field">
+                <label>المحافظة/المديرية</label
+                ><input type="text" placeholder="مثال: عدن — خورمكسر" />
+              </div>
             </div>
-            <button class="btn primary" type="button">بحث</button>
+            <div class="col-12 col-md-4 col-lg-3">
+              <button class="btn primary w-100" type="button">بحث</button>
+            </div>
           </form>
         </div>
         <div class="grid cols-3">
@@ -523,7 +615,7 @@
     </section>
 
     <!-- 9/ قسم خدمة الطوارئ -->
-    <section id="emergency" class="section emergency">
+    <section id="emergency" class="py-4 emergency">
       <div class="container">
         <div class="section-head">
           <h2 class="title">خدمة الطوارئ</h2>
@@ -565,7 +657,7 @@
     </section>
 
     <!-- 10/ قسم لمحة عن منصة ميعاد -->
-    <section id="about" class="section">
+    <section id="about" class="py-4">
       <div class="container">
         <div class="about">
           <h2 class="title">لمحة عن منصة ميعاد</h2>
@@ -580,7 +672,7 @@
     </section>
 
     <!-- 11/ قسم تحميل تطبيقات ميعاد -->
-    <section id="apps" class="section">
+    <section id="apps" class="py-4">
       <div class="container">
         <div class="grid cols-2 card" style="align-items: center">
           <div>
@@ -601,7 +693,7 @@
                 place-items: center;
               "
             >
-              موكअप التطبيق
+              صورة التطبيق
             </div>
           </div>
         </div>
