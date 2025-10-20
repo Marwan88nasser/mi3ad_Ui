@@ -9,11 +9,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <!-- CSS Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+    />
+    <!-- CSS Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <!-- CSS Swiper -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
     />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,170 +33,168 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=Tajawal:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <!-- 1/ الهيدر (ثابت في جميع الصفحات) -->
     <header>
-      <div class="container nav">
-        <div class="brand">
-          <div class="brand-logo" aria-hidden="true"></div>
-          <div>
-            <div style="font-size: 1.15rem; line-height: 1">ميعاد</div>
-            <div class="badge">منصة الرعاية الصحية</div>
+      <div class="navbar">
+        <div class="container">
+          <div class="brand">
+            <div class="brand-logo" aria-hidden="true"></div>
+            <div>
+              <div style="font-size: 1.15rem; line-height: 1">ميعاد</div>
+              <div class="badge">منصة الرعاية الصحية</div>
+            </div>
           </div>
+          <nav class="top-links">
+            <a class="pill" href="#" aria-label="اختيار اللغة"
+              >العربية / English</a
+            >
+            <span class="divider" aria-hidden="true"></span>
+            <span class="pill">الدولة: اليمن</span>
+            <span class="divider" aria-hidden="true"></span>
+            <a href="#contact">اتصل بنا</a>
+            <a href="#provider-register">سجل كمزود خدمة</a>
+            <a href="#signin">تسجيل الدخول</a>
+            <a href="#join">انضم إلينا</a>
+          </nav>
         </div>
-        <nav class="top-links">
-          <a class="pill" href="#" aria-label="اختيار اللغة"
-            >العربية / English</a
-          >
-          <span class="divider" aria-hidden="true"></span>
-          <span class="pill">الدولة: اليمن</span>
-          <span class="divider" aria-hidden="true"></span>
-          <a href="#contact">اتصل بنا</a>
-          <a href="#provider-register">سجل كمزود خدمة</a>
-          <a href="#signin">تسجيل الدخول</a>
-          <a href="#join">انضم إلينا</a>
-        </nav>
       </div>
     </header>
 
     <!-- 2/ قسم (Hero Section) مع خيارات الخدمات الرئيسية -->
-    <div class="swiper mySwiper">
+    <div class="swiper landing-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          
-          <img
-            src="https://img.freepik.com/premium-photo/healthcare-medical-doctor-with-stethoscope-patients-come-hospital_34200-808.jpg"
-            alt="slide img"
-            class="parallax-bg"
-            data-swiper-parallax="-23%"
-          />
-          <div class="title" data-swiper-parallax="-300">Slide 1</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
+          <div class="container">
+            <div class="title" data-swiper-parallax="-700">
+              مرحبًا بك في منصة ميعاد
+            </div>
+            <div class="subtitle" data-swiper-parallax="-800">
+              الرعاية الصحية تبدأ بخطوة
+            </div>
+            <div class="text" data-swiper-parallax="-900">
+              احجز موعدك الطبي بسهولة، وتواصل مع أفضل المراكز الصحية في المملكة
+              في دقائق فقط.
+            </div>
+            <img
+              src="https://sfotechnologies.net/images/innerslider/slide-healthcare-slide1.jpg"
+              alt="slide img"
+              class="parallax-bg"
+              data-swiper-parallax="-23%"
+            />
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="title" data-swiper-parallax="-300">Slide 2</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
+          <div class="container">
+            <div class="title" data-swiper-parallax="-700">
+              كل خدماتك الصحية في مكان واحد
+            </div>
+            <div class="subtitle" data-swiper-parallax="-800">
+              حجز سريع... رعاية موثوقة
+            </div>
+            <div class="text" data-swiper-parallax="-900">
+              ميعاد تجمع بين التقنية الحديثة والخبرة الطبية لتوفر لك تجربة صحية
+              متكاملة دون عناء.
+            </div>
+            <img
+              src="https://vilmate.com/wp-content/uploads/2018/08/Medical_Website_Development-2.jpg"
+              alt="slide img"
+              class="parallax-bg"
+              data-swiper-parallax="-23%"
+            />
           </div>
-          <img
-            src="https://vilmate.com/wp-content/uploads/2018/08/Medical_Website_Development-2.jpg"
-            alt="slide img"
-            class="parallax-bg"
-            data-swiper-parallax="-23%"
-          />
         </div>
         <div class="swiper-slide">
-          <div class="title" data-swiper-parallax="-300">Slide 3</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
+          <div class="container">
+            <div class="title" data-swiper-parallax="-700">
+              مراكز طبية معتمدة وشركاء موثوقون
+            </div>
+            <div class="subtitle" data-swiper-parallax="-800">
+              شبكة واسعة من مقدمي الرعاية
+            </div>
+            <div class="text" data-swiper-parallax="-900">
+              اختر من بين نخبة المراكز والعيادات الموثوقة لتلبية جميع احتياجاتك
+              الصحية بسهولة.
+            </div>
+            <img
+              src="https://as1.ftcdn.net/jpg/02/70/78/96/1000_F_270789669_ME6OAZmJEQA7xGTMesmyRPQ8BtpnGiOS.jpg"
+              alt="slide img"
+              class="parallax-bg"
+              data-swiper-parallax="-23%"
+            />
           </div>
-          <img
-            src="https://img.freepik.com/free-photo/doctor-reading-coronavirus-patient-medical-chart_53876-139569.jpg?semt=ais_hybrid&w=740&q=80"
-            alt="slide img"
-            class="parallax-bg"
-            data-swiper-parallax="-23%"
-          />
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
-    <!-- 
-    <section class="hero-slider" id="hero">
-      <input type="radio" id="s1" name="slide" checked />
-      <input type="radio" id="s2" name="slide" />
-      <input type="radio" id="s3" name="slide" />
-      <div class="hero-viewport">
-        <div class="hero-slides">
-          <div class="hero-slide">خدمات طبية شاملة</div>
-          <div class="hero-slide">احجز مواعيدك بسهولة</div>
-          <div class="hero-slide">خدمة الطوارئ 24/7</div>
-        </div>
-        <div class="hero-controls" aria-label="أزرار التنقّل">
-          <label class="ctrl" for="s1">‹</label>
-          <label class="ctrl" for="s3">›</label>
-        </div>
-        <div class="dots" aria-label="مؤشرات الشرائح">
-          <label class="dot" for="s1"></label>
-          <label class="dot" for="s2"></label>
-          <label class="dot" for="s3"></label>
-        </div>
-      </div>
-    </section> -->
 
-    <section class="hero" aria-label="خيارات الخدمات الرئيسية + مقدمة">
-      <div class="container hero-wrap">
+    <section class="hero py-5">
+      <div class="container">
         <div class="hero-card">
-          <h1 class="title">
+          <h3 class="title">
             منصّة مرنة وسريعة لتسهيل الوصول إلى خدمات الرعاية الصحية
-          </h1>
+          </h3>
           <p class="subtitle">
             ابحث عن الأطباء، العيادات، المستشفيات والخدمات العلاجية، واحجز
             مواعيدك بسهولة وشفافية.
           </p>
-          <div class="service-list" aria-label="خيارات خدمات رئيسية بارزة">
+          <div class="service-list">
             <a class="service" href="#specialties-list">
-              <div class="icon">🏥</div>
-              <div>
-                <div style="font-weight: 700">كشف عيادة طبيب</div>
-                <div class="meta">(ملحوظة 1) يفتح قائمة التخصصات والبحث</div>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-user-doctor"></i>
               </div>
+              <div class="service-content">
+                <div class="service-title">كشف عيادة طبيب</div>
+                <div class="meta">احجز موعدك مع أفضل الأطباء والتخصصات</div>
+              </div>
+              <i class="fa-solid fa-arrow-left service-arrow"></i>
             </a>
+
             <a class="service" href="#tele-consult">
-              <div class="icon">📞</div>
-              <div>
-                <div style="font-weight: 700">
-                  استشارة هاتفية (صوتية / فيديو)
-                </div>
-                <div class="meta">تواصل سريع من منزلك</div>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-video"></i>
               </div>
+              <div class="service-content">
+                <div class="service-title">استشارة هاتفية (صوتية / فيديو)</div>
+                <div class="meta">تواصل سريع مع الطبيب من منزلك</div>
+              </div>
+              <i class="fa-solid fa-arrow-left service-arrow"></i>
             </a>
+
             <a class="service" href="#home-care">
-              <div class="icon">🏠</div>
-              <div>
-                <div style="font-weight: 700">رعاية منزلية</div>
-                <div class="meta">(7) صفحة خدمات وزيارات منزلية</div>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-house-medical"></i>
               </div>
+              <div class="service-content">
+                <div class="service-title">رعاية منزلية</div>
+                <div class="meta">خدمات طبية متكاملة في منزلك</div>
+              </div>
+              <i class="fa-solid fa-arrow-left service-arrow"></i>
             </a>
+
             <a class="service" href="#emergency">
-              <div class="icon">⏱️</div>
-              <div>
-                <div style="font-weight: 700">خدمة طارئة</div>
-                <div class="meta">(9) اعرض الأطباء المتاحين الآن</div>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-truck-medical"></i>
               </div>
+              <div class="service-content">
+                <div class="service-title">خدمة طارئة</div>
+                <div class="meta">أطباء متاحون الآن للحالات العاجلة</div>
+              </div>
+              <i class="fa-solid fa-arrow-left service-arrow"></i>
             </a>
+
             <a class="service" href="#other-services">
-              <div class="icon">🧪</div>
-              <div>
-                <div style="font-weight: 700">خدمات طبية أخرى</div>
-                <div class="meta">(8) خدمات المنشآت مع الأسعار</div>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-flask"></i>
               </div>
+              <div class="service-content">
+                <div class="service-title">خدمات طبية أخرى</div>
+                <div class="meta">تحاليل، أشعة، وخدمات إضافية</div>
+              </div>
+              <i class="fa-solid fa-arrow-left service-arrow"></i>
             </a>
           </div>
         </div>
@@ -663,6 +673,10 @@
         </div>
       </div>
     </footer>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
     <!-- JS Swiper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <!-- JS Main File -->
